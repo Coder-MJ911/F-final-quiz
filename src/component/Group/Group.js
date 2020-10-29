@@ -5,18 +5,7 @@ class Group extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      group: {
-        id: 1,
-        name: '组',
-        trainers: [
-          { id: 1, name: 'trainer1' },
-          { id: 2, name: 'trainer2' },
-        ],
-        trainee: [
-          { id: 1, name: 'trainee1' },
-          { id: 2, name: 'trainee2' },
-        ],
-      },
+      group: this.props.group,
     };
   }
 
@@ -40,9 +29,9 @@ class Group extends React.Component {
         </div>
         <nav>
           <ul className="groupMembers">
-            {this.state.group.trainers.map((trainer) => (
+            {this.state.group.trainees.map((trainee) => (
               <li className="member">
-                {trainer.id}.{trainer.name}
+                {trainee.id}.{trainee.name}
               </li>
             ))}
           </ul>
