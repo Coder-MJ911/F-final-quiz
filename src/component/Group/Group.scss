@@ -18,8 +18,10 @@
 
     .trainersMember {
       display: flex;
+      justify-content: space-between;
       li {
         @include makeItem($bg-gray);
+        margin-right: 10px;
       }
     }
   }
@@ -29,6 +31,7 @@
 
     .member {
       @include makeItem($light-gray);
+      margin-right: 10px;
     }
   }
 }

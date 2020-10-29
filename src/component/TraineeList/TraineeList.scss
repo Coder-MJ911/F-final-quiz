@@ -1,0 +1,21 @@
+@import '../../style/mixin';
+
+.trainees {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .trainees-tittle {
+    @include title();
+    width: 100%;
+  }
+
+  .trainee-member {
+    @include makeItem($light-gray);
+  }
+
+  .add-trainee {
+    @include makeItem($light-gray);
+    border: none;
+  }
+}

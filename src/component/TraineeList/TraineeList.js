@@ -1,4 +1,5 @@
 import React from 'react';
+import './TraineeList.scss';
 
 class TraineeList extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class TraineeList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="trainees">
         <span className="trainees-tittle">学员列表</span>
         {this.state.trainees
           .filter((trainee) => trainee.grouped === false)
@@ -24,9 +25,13 @@ class TraineeList extends React.Component {
               </li>
             </ul>
           ))}
-        <button type="button" className="add-trainee">
-          +添加学员
-        </button>
+        <ul>
+          <li>
+            <button type="button" className="add-trainee">
+              +添加学员
+            </button>
+          </li>
+        </ul>
       </div>
     );
   }

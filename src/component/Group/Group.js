@@ -27,8 +27,8 @@ class Group extends React.Component {
           <span className="groupName">
             {this.state.group.id} {this.state.group.name}
           </span>
-          <nav className="trainersMember">
-            <ul>
+          <nav>
+            <ul className="trainersMember">
               <li>
                 {this.state.group.trainers[0].id} {this.state.group.trainers[0].name}
               </li>
@@ -38,8 +38,8 @@ class Group extends React.Component {
             </ul>
           </nav>
         </div>
-        <nav className="groupMembers">
-          <ul>
+        <nav>
+          <ul className="groupMembers">
             {this.state.group.trainers.map((trainer) => (
               <li className="member">
                 {trainer.id}.{trainer.name}
