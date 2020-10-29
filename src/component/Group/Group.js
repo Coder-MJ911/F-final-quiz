@@ -1,4 +1,5 @@
 import React from 'react';
+import './Group.scss';
 
 class Group extends React.Component {
   constructor(props) {
@@ -21,21 +22,23 @@ class Group extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="groupBody">
         <div className="groupInfo">
-          <span className="gruopname">
+          <span className="groupName">
             {this.state.group.id} {this.state.group.name}
           </span>
-          <ul>
-            <li>
-              {this.state.group.trainers[0].id} {this.state.group.trainers[0].name}
-            </li>
-            <li>
-              {this.state.group.trainers[1].id} {this.state.group.trainers[1].name}
-            </li>
-          </ul>
+          <nav>
+            <ul>
+              <li>
+                {this.state.group.trainers[0].id} {this.state.group.trainers[0].name}
+              </li>
+              <li>
+                {this.state.group.trainers[1].id} {this.state.group.trainers[1].name}
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div className="groupMembers">
+        <nav className="groupMembers">
           <ul>
             {this.state.group.trainers.map((trainer) => (
               <li className="member">
@@ -43,7 +46,7 @@ class Group extends React.Component {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
       </div>
     );
   }

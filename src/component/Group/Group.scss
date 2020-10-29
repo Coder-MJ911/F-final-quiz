@@ -1,0 +1,30 @@
+@import '../../style/variables';
+
+.groupBody {
+  margin-top: 15px;
+  border: 1px solid $gray;
+  .groupInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: $gray;
+
+    .groupName {
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+    }
+  }
+
+  .groupMembers {
+    display: flex;
+
+    .member {
+      background-color: $light-gray;
+    }
+  }
+}
