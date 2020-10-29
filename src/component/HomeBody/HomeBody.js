@@ -6,8 +6,6 @@ import TraineeList from '../TraineeList/TraineeList';
 import './HomeBody.scss';
 
 class HomeBody extends React.Component {
-  componentDidMount() {}
-
   render() {
     return (
       <div className="home-body">
