@@ -1,6 +1,18 @@
+@import 'variables';
+
 @mixin btn-varint($color, $bg-color) {
   background-color: $bg-color;
   border: none;
   color: $color;
   width: 150px;
+}
+
+@mixin title() {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+@mixin makeItem($bg-color) {
+  background-color: $bg-color;
+  padding: $padding-item-y $padding-item-y;
 }

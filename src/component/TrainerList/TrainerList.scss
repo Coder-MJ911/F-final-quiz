@@ -1,0 +1,20 @@
+@import '../../style/mixin';
+
+.trainers {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .trainers-tittle {
+    @include title();
+    width: 100%;
+  }
+  .trainers-member {
+    @include makeItem($light-gray);
+  }
+
+  .add-trainer {
+    @include makeItem($light-gray);
+    border: none;
+  }
+}

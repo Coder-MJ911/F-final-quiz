@@ -1,4 +1,5 @@
 @import '../../style/variables';
+@import '../../style/mixin';
 
 .groupBody {
   margin-top: 15px;
@@ -15,8 +16,11 @@
       color: white;
     }
 
-    nav {
+    .trainersMember {
       display: flex;
+      li {
+        @include makeItem($bg-gray);
+      }
     }
   }
 
@@ -24,7 +28,7 @@
     display: flex;
 
     .member {
-      background-color: $light-gray;
+      @include makeItem($light-gray);
     }
   }
 }

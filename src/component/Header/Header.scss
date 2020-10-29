@@ -6,8 +6,7 @@
   justify-content: space-between;
 
   .logo {
-    font-weight: bold;
-    font-size: 30px;
+    @include title();
   }
 
   .separate-button {

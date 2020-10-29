@@ -27,7 +27,7 @@ class Group extends React.Component {
           <span className="groupName">
             {this.state.group.id} {this.state.group.name}
           </span>
-          <nav>
+          <nav className="trainersMember">
             <ul>
               <li>
                 {this.state.group.trainers[0].id} {this.state.group.trainers[0].name}

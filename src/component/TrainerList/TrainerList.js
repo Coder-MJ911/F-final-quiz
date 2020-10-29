@@ -1,4 +1,5 @@
 import React from 'react';
+import './TrainerList.scss';
 
 class TrainerList extends React.Component {
   constructor(props) {
@@ -13,20 +14,24 @@ class TrainerList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="trainers">
         <span className="trainers-tittle">讲师列表</span>
         {this.state.trainers
           .filter((trainer) => trainer.grouped === false)
           .map((trainer) => (
             <ul>
-              <li className="trainer-member">
+              <li className="trainers-member">
                 {trainer.id}.{trainer.name}
               </li>
             </ul>
           ))}
-        <button type="button" className="add-trainer">
-          +添加讲师
-        </button>
+        <ul>
+          <li>
+            <button type="button" className="add-trainer">
+              +添加讲师
+            </button>
+          </li>
+        </ul>
       </div>
     );
   }
