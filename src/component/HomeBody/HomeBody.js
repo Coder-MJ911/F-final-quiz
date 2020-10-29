@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import GroupList from '../GroupList/GroupList';
 import TrainerList from '../TrainerList/TrainerList';
 import TraineeList from '../TraineeList/TraineeList';
+import './HomeBody.scss';
 
 class HomeBody extends React.Component {
   render() {

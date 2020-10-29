@@ -1,10 +1,11 @@
 import React from 'react';
+import './Header.scss';
 
 class Header extends React.Component {
   render() {
     return (
       <header className="header">
-        <h3>分组列表</h3>
+        <span className="logo">分组列表</span>
         <button type="button" className="separate-button">
           分组学员
         </button>

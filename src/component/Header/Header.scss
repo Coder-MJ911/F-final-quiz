@@ -1,4 +1,16 @@
+@import '../../style/variables';
+@import '../../style/mixin';
+
 .header {
   display: flex;
   justify-content: space-between;
+
+  .logo {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .separate-button {
+    @include btn-varint($bg-gray, $primary-color);
+  }
 }
