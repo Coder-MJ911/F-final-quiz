@@ -20,7 +20,7 @@ class TrainerList extends React.Component {
           .map((trainer) => (
             <ul>
               <li className="trainer-member">
-                ({trainer.id}.{trainer.name})
+                {trainer.id}.{trainer.name}
               </li>
             </ul>
           ))}

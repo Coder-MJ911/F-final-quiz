@@ -37,7 +37,6 @@ class GroupList extends React.Component {
   render() {
     return (
       <div>
-        $
         {this.state.groupList.map((group) => (
           <Group group={group} />
         ))}

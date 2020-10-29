@@ -24,20 +24,19 @@ class Group extends React.Component {
       <div>
         <div className="groupInfo">
           <span className="gruopname">
-            `${this.state.group.id} ${this.state.group.name}`
+            {this.state.group.id} {this.state.group.name}
           </span>
           <ul>
             <li>
-              `${this.state.group.trainers[0].id} ${this.state.group.trainers[0].name}`
+              {this.state.group.trainers[0].id} {this.state.group.trainers[0].name}
             </li>
             <li>
-              `${this.state.group.trainers[1].id} ${this.state.group.trainers[1].name}`
+              {this.state.group.trainers[1].id} {this.state.group.trainers[1].name}
             </li>
           </ul>
         </div>
         <div className="groupMembers">
           <ul>
-            $
             {this.state.group.trainers.map((trainer) => (
               <li className="member">
                 {trainer.id}.{trainer.name}
