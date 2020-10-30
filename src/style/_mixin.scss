@@ -1,5 +1,5 @@
 @import 'variables';
-
+// TODO GTB-3: + 使用了mixin
 @mixin btn-varint($color, $bg-color) {
   background-color: $bg-color;
   border: none;
